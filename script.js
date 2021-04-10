@@ -13,8 +13,8 @@ hamburger.classList.add("nav-links");
         else {
             hamburger.classList.remove("nav-links")
         }
-        debz.hamburgerBarhidden = !
-        debz.hamburgerBarhidden;
+        state.hamburgerBarhidden = !
+        state.hamburgerBarhidden;
     };
 
 
