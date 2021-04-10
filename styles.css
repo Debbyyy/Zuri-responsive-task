@@ -44,9 +44,9 @@ ul.nav-links {
         text-align: center;
         transition: top .4s;
     }
-    ul.nav-links.show {
+    /* ul.nav-links.show {
         top: 60px;
-    }
+    } */
 }
 /* HAMBURGER ICON STYLES BEGINS HERE */
 .icon {
