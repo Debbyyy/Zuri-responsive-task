@@ -17,6 +17,7 @@ div.nav-bar {
 @media screen and (max-width:600px) {
     div.nav-bar {
         padding: 1rem 3rem;
+        z-index: 1;
     }
 }
 
@@ -32,10 +33,22 @@ ul.nav-links {
 }
 @media screen and (max-width:600px) {
     ul.nav-links {
-        display: none;
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        top: -300px;
+        right: 0;
+        line-height: 30px;
+        /* left: -100%; */
+        text-align: center;
+        transition: top .4s;
+    }
+    ul.nav-links.show {
+        top: 60px;
     }
 }
-
+/* HAMBURGER ICON STYLES BEGINS HERE */
 .icon {
     display: none;
 }
@@ -44,8 +57,12 @@ ul.nav-links {
         display: block;
         background-color: #304353;
         color: #bcc3c7;
+        cursor: pointer;
         /* height: 70%; */
         /* padding: 20px; */
+    }
+    .icon:focus {
+        outline: none;
     }
 }
 @media screen and (max-width:600px) {
@@ -54,22 +71,29 @@ ul.nav-links {
         color: #304353;
     }
 }
+/* HAMBURGER STYLES ENDS HERE */
 
 ul li {
     margin: 0 2vw;
     list-style: none;
     font-size: 1.1rem;
 }
-/* @media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
     ul li {
-        display: none;
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        text-align: center;
     }
-} */
+}
 
 ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
+}
+@media screen and (max-width:600px) {
+    font-size: 20px;
 }
 
 ul li a:hover {
