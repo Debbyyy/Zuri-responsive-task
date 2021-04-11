@@ -43,18 +43,16 @@ ul.nav-links-mobile {
 @media screen and (max-width:600px) {
     .nav-links-mobile {
         display: none;
-        /* display: block; */
-        /* top: -300px; */
+        background-color: #fff;
+        position: absolute;
+        width: 50%;
+        right: 0;
+        transition: all .4s ease-in-out;
         text-align: center;
     }
 }
 .show-nav-links {
     display: block!important;
-    background-color: #fff;
-    position: absolute;
-    width: 50%;
-    right: 0;
-    transition: all .4s ease-in-out;
 }
 .x-icon {
     display: none;
