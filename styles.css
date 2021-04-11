@@ -37,13 +37,13 @@ ul.nav-links {
         display: none;
     }
 }
-ul.nav-links-mobile {
+.nav-links-mobile {
     display: none;
 }
 @media screen and (max-width:600px) {
     .nav-links-mobile {
         display: none;
-        background-color: #fff;
+        background-color: #fff !important;
         position: absolute;
         width: 50%;
         right: 0;
