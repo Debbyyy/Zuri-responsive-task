@@ -69,11 +69,11 @@ ul li {
     }
 }
 
-.icon {
+#icon {
     display: none;
 }
 @media screen and (max-width:600px) {
-    .icon {
+    #icon {
         display: block!important;
         cursor: pointer;
         color: #BCC3C7;
@@ -333,9 +333,10 @@ div.gallery-img {
 }
 @media screen and (max-width:600px) {
     div.gallery-img {
-        /* display: flex; */
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding: 4rem 2rem;
     }
 }
 

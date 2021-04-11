@@ -1,5 +1,5 @@
 
-const hamburger = document.querySelector(".icon")
+const hamburger = document.querySelector("#icon")
 const nav = document.querySelector(".nav-links")
 
 const state = {
