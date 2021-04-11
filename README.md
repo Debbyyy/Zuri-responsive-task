@@ -1,5 +1,4 @@
 # Zuri-responsive-task
-this is a task that tested our knowledge of media queries. there may be some inconsistencies but bear in mind that i am a beginner.
 
 hello world!
 greetings!
