@@ -9,10 +9,10 @@ const state = {
 
     const toggleNavHandler = () => {
         if (state.navHidden) {
-nav.classList.add("nav-links-mobile");
+nav.classList.add("show-nav-links");
         }
         else {
-            nav.classList.remove("nav-links-mobile")
+            nav.classList.remove("show-nav-links")
         }
         state.navHidden = !
         state.navHidden;
