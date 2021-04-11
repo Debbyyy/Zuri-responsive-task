@@ -42,11 +42,13 @@ ul.nav-links-mobile {
 }
 @media screen and (max-width:600px) {
     ul.nav-links-mobile {
+        /* display: none; */
         display: block;
         position: absolute;
         width: 50%;
         background-color: #fff;
         right: 0;
+        /* top: -300px; */
         text-align: center;
         transition: all .4s ease-in-out;
     }

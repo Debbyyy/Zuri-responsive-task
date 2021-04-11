@@ -1,6 +1,6 @@
 
 const hamburger = document.querySelector("#icon")
-const close = document.querySelector(".x-icon")
+// const close = document.querySelector(".x-icon")
 const nav = document.querySelector(".nav-links")
 
 const state = {
@@ -17,10 +17,6 @@ nav.classList.add("nav-links-mobile");
         state.navHidden = !
         state.navHidden;
     };
-
-    hamburger.onclick =  function() {
-        nav.classList.toggle('nav-links-mobile');
-      };
 
 
 
