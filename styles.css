@@ -48,7 +48,7 @@ ul.nav-links-mobile {
         background-color: #fff;
         right: 0;
         text-align: center;
-        transition: .4s;
+        transition: all .4s ease-in-out;
     }
 }
 .x-icon {

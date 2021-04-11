@@ -1,23 +1,28 @@
 
 const hamburger = document.querySelector("#icon")
+const close = document.querySelector(".x-icon")
 const nav = document.querySelector(".nav-links")
 
 const state = {
     navHidden: true
 }
 
-    const toggleHamburgerbarHandler = () => {
+    const toggleNavHandler = () => {
         if (state.navHidden) {
-hamburger.classList.add("nav-links");
+nav.classList.add("nav-links-mobile");
         }
         else {
-            hamburger.classList.remove("nav-links")
+            nav.classList.remove("nav-links-mobile")
         }
-        state.hamburgerBarhidden = !
-        state.hamburgerBarhidden;
+        state.navHidden = !
+        state.navHidden;
     };
 
+    hamburger.onclick =  function() {
+        nav.classList.toggle('nav-links-mobile');
+      };
 
 
-hamburger.addEventListener("click", toggleHamburgerbarHandler);
-icon.addEventListener("click", toggleHamburgerbarHandler);
+
+nav.addEventListener("click", toggleNavHandler);
+icon.addEventListener("click", toggleNavHandler);
